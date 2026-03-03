@@ -1,133 +1,56 @@
 {
-  // --- Aparência e Tema ---
-  "workbench.colorTheme": "Oscura Dusk",
-  "workbench.preferredDarkColorTheme": "Oscura Dusk",
-  "workbench.iconTheme": "symbols",
-  "workbench.productIconTheme": "fluent-icons",
-  "window.autoDetectColorScheme": true,
-  "symbols.hidesExplorerArrows": false,
-  // --- Fonte e Estilo do Editor ---
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.8,
-  "editor.fontLigatures": true,
-  "editor.tabSize": 2,
-  // --- Layout da Interface (Minimalista) ---
-  "workbench.startupEditor": "none",
-  "workbench.activityBar.location": "top",
-  "workbench.editor.labelFormat": "short",
-  "workbench.statusBar.visible": false,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "editor.minimap.enabled": false,
-  "editor.scrollbar.vertical": "hidden",
-  "chat.commandCenter.enabled": false,
-  // --- Comportamento do Editor ---
-  "editor.rulers": [
-    80,
-    120
-  ],
-  "editor.renderLineHighlight": "gutter",
-  "editor.stickyScroll.enabled": false,
-  "editor.suggestSelection": "first",
-  "editor.parameterHints.enabled": false,
-  "editor.accessibilitySupport": "off",
-  "editor.semanticHighlighting.enabled": false,
-  "editor.multiCursorLimit": 50000,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.mouseWheelZoom": true,
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  // --- Ações ao Salvar e Formatação ---
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
   },
-  // --- Explorador de Arquivos (Com Aninhamento) ---
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.compactFolders": false,
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-    "package.json": ".eslint*, eslint.config.*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
-    "tailwind.config.*": "tailwind.config*, postcss.config*",
-    ".env.local": ".env*",
-    ".env": ".env*"
+  "project_panel": {
+    "auto_fold_dirs": false
   },
-  "files.associations": {
-    ".env.*": "dotenv",
-    ".prettierrc": "json",
-    ".dev.vars": "dotenv"
+  "status_bar": {
+    "experimental.show": true
   },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/node_modules": true,
-    "**/.cache": true,
-    "**/.next": true,
-    "**/dist": true,
-    "**/build": true
+  "tab_bar": {
+    "show": true,
+    "show_tab_bar_buttons": false
   },
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/*.code-search": true,
-    "**/package-lock.json": true
+  "sticky_scroll": {
+    "enabled": false
   },
-  // --- Terminal Integrado ---
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.showExitAlert": false,
-  "terminal.integrated.gpuAcceleration": "on",
-  // --- Configurações por Linguagem (JS/TS) ---
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  "gutter": {
+    "folds": false
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "minimap": {
+    "show": "never"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "scrollbar": {
+    "axes": {
+      "horizontal": false,
+      "vertical": false
+    }
   },
-  "[prisma]": {
-    "editor.formatOnSave": true
+  "current_line_highlight": "gutter",
+  "cursor_blink": true,
+  "max_tabs": 8,
+  "autosave": "on_focus_change",
+  "indent_guides": {
+    "enabled": false
   },
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx",
-    "mdx": "jsx"
+  "ensure_final_newline_on_save": false,
+  "remove_trailing_whitespace_on_save": false,
+  "format_on_save": "off",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Symbols Icon Theme",
+    "dark": "Symbols Icon Theme"
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "graphql"
-  ],
-  "tailwindCSS.experimental.classRegex": [
-    [
-      "tv\\(([^)]*)\\)",
-      "cva\\(([^)]*)\\)",
-      "[\"'`]([^\"'`]*).*?[\"'`]"
-    ],
-    "class:\\s*?[\"'`]([^\"'`]*).*?,",
-    "tw\\('([^']*)'\\)"
-  ],
-  // --- Integração com Git e Extensões ---
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "extensions.ignoreRecommendations": true,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "cSpell.language": "en,pt",
-  // --- Sistema e Segurança ---
-  "update.mode": "start",
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "liveServer.settings.donotShowInfoMsg": true,
+  "base_keymap": "VSCode",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14.0,
 }
